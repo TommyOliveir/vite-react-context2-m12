@@ -5,7 +5,7 @@ function Header() {
     return (
         <header>
             <UserContextConsumer>
-                {username => (
+                {({username}) => (
                     <p>Welcome, {username}!</p>
                 )}
             </UserContextConsumer>
